@@ -1,17 +1,15 @@
 package src;
 
-public class NotificationFactory {
-  
-    public static Notification createNotification(String type) {
-        if (type == null || type.isEmpty()) {
-            return null;
+public class NotificationService {
+    public void send(String type, String message, String receiver) {
+        
+        Notification notification = NotificationFactory.createNotification(type);
+        
+        if (notification != null) {
+           
+            notification.sendMessage(message, receiver);
+        } else {
+            System.out.println("Hata: Desteklenmeyen bildirim türü -> " + type);
         }
-
-        if (type.equalsIgnoreCase("SMS")) {
-            return new SmsNotification();
-        } else if (type.equalsIgnoreCase("EMAIL")) {
-            return new EmailNotification();
-        }
-        return null;
     }
 }
