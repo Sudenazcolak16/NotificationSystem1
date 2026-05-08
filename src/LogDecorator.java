@@ -1,4 +1,4 @@
-package ödev1;
+package src;
 
 
 public class LogDecorator extends NotificationDecorator {
