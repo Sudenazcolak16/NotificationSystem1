@@ -1,25 +1,23 @@
+
 package src;
 
 public class Main {
     public static void main(String[] args) {
-       
-        NotificationService service = new NotificationService();
-
-        System.out.println("========= FAZ 1: FACTORY METHOD TESTI =========");
+        System.out.println("=== FAZ 2 SİSTEM KONTROLÜ ===\n");
 
         
-        service.send("SMS", "Sisteme giriş yapıldı.", "555-123-4567");
-
-        System.out.println("-----------------------------------------------");
-
+        ModernSmsLib disKutuphane = new ModernSmsLib();
+        Notification adapterSms = new SmsAdapter(disKutuphane);
         
-        service.send("EMAIL", "Haftalık rapor hazır.", "ogrenci@universite.edu.tr");
+        System.out.println("[Test 1: Adapter]");
+        adapterSms.sendMessage("Adapter üzerinden gelen mesaj.", "123456");
 
-        System.out.println("-----------------------------------------------");
+        System.out.println("\n-----------------------------------\n");
 
-        
-        service.send("PUSH", "Bu tür henüz desteklenmiyor.", "User123");
+        Notification logluAdapterSms = new LogDecorator(adapterSms);
 
-        System.out.println("===============================================");
+        System.out.println("[Test 2: Decorator + Adapter Birlikte]");
+        logluAdapterSms.sendMessage("Loglanmış ve adapte edilmiş mesaj.", "987654");
+     
     }
 }
