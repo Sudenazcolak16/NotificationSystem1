@@ -21,7 +21,13 @@ jobs:
         
     - name: Compile Project
       run: |
-        # src klasörü içindeki tüm java dosyalarını paket yapısıyla derler
+        # Tüm alt klasörlerdeki .java dosyalarını bulup bir listeye yazar
+        find . -name "*.java" > sources.txt
+        
+        # Dosya listesini ekrana bas (Hata olursa nerede olduğunu görelim)
+        echo "Derlenecek dosyalar:"
+        cat sources.txt
+        
+        # Derleme komutu
         mkdir -p out
-        javac -encoding UTF-8 -d out $(find src -name "*.java")
-        echo "Derleme başarıyla tamamlandı!"
+        javac -encoding UTF-8 -d out @sources.txt
