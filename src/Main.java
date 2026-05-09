@@ -1,3 +1,4 @@
+
 package src;
 
 public class Main {
@@ -34,4 +35,4 @@ public class Main {
 
         System.out.println("\nFaz 3 başarıyla tamamlandı. Mevcut kodlar korunarak yeni desenler test edildi.");
     }
-}
+
