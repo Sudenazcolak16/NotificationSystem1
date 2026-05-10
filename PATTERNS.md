@@ -12,4 +12,10 @@ Gevşek Bağlılık (Loose Coupling): Sınıflar arası bağımlılık azaltıld
 ### 1. Önceki Yapı (Before)
 Nesne yaratma işlemi Main sınıfı içerisinde manuel olarak yapılıyordu.
 
-![UML Diyagramı](umldiyagrami_before.png)
+### Phase 1: Factory Method Uygulaması
+
+**Önceki Yapı (Before):**
+![Önceki Yapı](umldiyagrami.png)
+
+**Sonraki Yapı (After):**
+![Sonraki Yapı](umldiyagrami2.png)
