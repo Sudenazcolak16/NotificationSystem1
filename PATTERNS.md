@@ -13,7 +13,8 @@ Gevşek Bağlılık (Loose Coupling): Sınıflar arası bağımlılık azaltıld
 Nesne yaratma işlemi Main sınıfı içerisinde manuel olarak yapılıyordu.
 
 ### 1. Önceki Yapı (Before)
-![Önceki Yapı](umldiyagramı.png)
+![Önceki Yapı](umldiyagramı%20(2).png)
 
 ### 2. Sonraki Yapı (After)
-![Sonraki Yapı](umldiyagramı%20(2).png)
+![Sonraki Yapı](umldiyagramı.png)
+
