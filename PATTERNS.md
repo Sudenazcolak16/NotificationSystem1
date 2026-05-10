@@ -11,8 +11,5 @@ Bakım Kolaylığı: Nesne oluşturma mantığı tek bir merkezde toplandı.
 Gevşek Bağlılık (Loose Coupling): Sınıflar arası bağımlılık azaltıldı.
 ### 1. Önceki Yapı (Before)
 Nesne yaratma işlemi Main sınıfı içerisinde manuel olarak yapılıyordu.
-### 1. Önceki Yapı (Before)
-![Önceki Yapı](umldiyagrami-before.png)
 
-### 2. Sonraki Yapı (After)
-![Sonraki Yapı](umldiyagrami2-after.png)
+![UML Diyagramı](umldiyagrami_before.png)
