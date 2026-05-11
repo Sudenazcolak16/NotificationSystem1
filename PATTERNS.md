@@ -9,6 +9,5 @@ Nesne oluşturma sorumluluğu NotificationService üzerinden alınarak Notificat
 Esneklik: Yeni bir bildirim türü eklemek için mevcut servis koduna dokunmaya gerek kalmadı.
 Bakım Kolaylığı: Nesne oluşturma mantığı tek bir merkezde toplandı.
 Gevşek Bağlılık (Loose Coupling): Sınıflar arası bağımlılık azaltıldı.
-### 1. Önceki Yapı (Before)
-Nesne yaratma işlemi Main sınıfı içerisinde manuel olarak yapılıyordu.
+
 
