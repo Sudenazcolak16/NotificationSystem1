@@ -16,6 +16,8 @@ Bu fazda, sistemin davranışsal esnekliğini artırmak ve bileşenler arası ba
 
 ---
 ###  Mimari Diyagram Güncellemesi (Phase-2)
+![Phase 2 Mimari](docs/diagrams/umldiyagrami.png)
+
 ![Phase 2 Mimari](docs/diagrams/umldiyagrami3.png)
 
 1. Problem
