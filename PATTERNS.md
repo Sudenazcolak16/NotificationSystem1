@@ -6,7 +6,7 @@ Bu fazda, sistemin davranışsal esnekliğini artırmak ve bileşenler arası ba
 * **Nerede Uygulandı:** Bildirim gönderim sürecinde (`FastSendingStrategy` ve `EconomicSendingStrategy`).
 * **Neden:** Bildirimlerin gönderim hızını ve maliyetini belirleyen algoritmaları, ana sınıflardan (Notification sınıfları) ayırmak için seçilmiştir.
 * **Ne Kazandık:** - **Esneklik:** Çalışma zamanında (runtime) gönderim stratejisi değiştirilebilir hale geldi.
-    - **Genişletilebilirlik:** Yeni bir gönderim modu (örn. `InstantDelivery`) eklendiğinde mevcut kodları bozmadan sadece yeni bir strateji sınıfı eklemek yeterli oldu.
+  **Genişletilebilirlik:** Yeni bir gönderim modu eklendiğinde mevcut kodları bozmadan sadece yeni bir strateji sınıfı eklemek yeterli oldu.
 
 ### 2. Observer Pattern (Gözlemci Örüntüsü)
 * **Nerede Uygulandı:** `AdminLogCenter` ve bildirim gönderim takip mekanizmasında.
