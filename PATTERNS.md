@@ -31,8 +31,8 @@ Sisteme sonradan dahil edilen ve mevcut `Notification` arayüzümüzle uyumlu ol
 Mevcut istemci kodunu (Main veya Service) değiştirmeden, tamamen farklı yapıdaki kütüphanelerin sistemle "konuşmasını" sağlar.
 
 ---
-## Miamri Diyagram
-![Mimari Diyagram](umldiyagrami.png)
+## Mimari Diyagram
+![Mimari](docs/diagrams/umldiyagrami.png)
 
 ## Genel Proje Yapısı (Faz 1, 2 ve 3 Birleşimi)
 
