@@ -18,7 +18,7 @@ Bu fazda, sistemin davranışsal esnekliğini artırmak ve bileşenler arası ba
     - **Otomasyon:** Manuel loglama yerine olay tabanlı otomatik bir takip sistemi kuruldu.
 
 ###  Mimari Diyagram Güncellemesi (Phase-2)
-![Phase 2 Mimari](umldiyagrami3.png
+docs/diagrams/umldiyagrami3.png
 
 1. Problem
 Başlangıçta NotificationService sınıfı, hangi bildirim türünün (SMS, Email) oluşturulacağına if-else blokları kullanarak kendisi karar veriyordu. Bu durum, sisteme yeni bir bildirim türü eklendiğinde servis kodunun sürekli değiştirilmesini gerektiriyordu (Open-Closed prensibine aykırı). Nesne oluşturma mantığı ile iş mantığı birbirine karışmıştı.
