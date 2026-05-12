@@ -32,7 +32,7 @@ Mevcut istemci kodunu (Main veya Service) değiştirmeden, tamamen farklı yapı
 
 ---
 ## Miamri Diyagram
-![Phase 3 Mimari Diyagram](docs/diagrams/umldiyagrami.png)
+![Mimari Diyagram](umldiyagrami.png)
 
 ## Genel Proje Yapısı (Faz 1, 2 ve 3 Birleşimi)
 
