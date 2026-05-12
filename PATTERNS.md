@@ -1,13 +1,8 @@
 
-1. Problem
-Başlangıçta NotificationService sınıfı, hangi bildirim türünün (SMS, Email) oluşturulacağına if-else blokları kullanarak kendisi karar veriyordu. Bu durum, sisteme yeni bir bildirim türü eklendiğinde servis kodunun sürekli değiştirilmesini gerektiriyordu (Open-Closed prensibine aykırı). Nesne oluşturma mantığı ile iş mantığı birbirine karışmıştı.
-
-2. Çözüm
-Nesne oluşturma sorumluluğu NotificationService üzerinden alınarak NotificationFactory sınıfına devredildi. Servis artık somut sınıfları (SmsNotification, EmailNotification) tanımak yerine sadece Notification arayüzünü ve fabrikayı tanıyor.
-
-3. Kazanımlar
-Esneklik: Yeni bir bildirim türü eklemek için mevcut servis koduna dokunmaya gerek kalmadı.
-Bakım Kolaylığı: Nesne oluşturma mantığı tek bir merkezde toplandı.
-Gevşek Bağlılık (Loose Coupling): Sınıflar arası bağımlılık azaltıldı.
-
+Nerede Kullandım:
+Bildirim nesnelerinin (Email, SMS gibi) oluşturulma sürecini main içindeki karmaşık yapıdan kurtarıp, bu işi üstlenen bir fabrika yapısına taşıdım. 
+Neden Seçtim:
+Faz 0'da tespit ettiğim en büyük sorun, her yeni bildirim tipinde ana kodu değiştirmek zorunda kalmamdı. Factory Method sayesinde nesne üretimini soyutlayarak, istemci kodun (client code) hangi nesnenin nasıl üretildiğiyle ilgilenmemesini sağladım. 
+Ne Kazandım:
+Artık yeni bir bildirim kanalı eklemek istediğimde mevcut sınıflardaki o meşhur if-else yığınlarına dokunmuyorum. Bu da bana daha esnek bir yapı ve daha temiz bir nesne yaratma süreci kazandırdı.
 
